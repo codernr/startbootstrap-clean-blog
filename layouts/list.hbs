@@ -1,0 +1,22 @@
+{{#each data.items}}
+<div class="post-preview">
+    <a href="{{url}}">
+        <h2 class="post-title">
+            {{title}}
+        </h2>
+        <h3 class="post-subtitle">
+            {{excerpt}}
+        </h3>
+    </a>
+    <p class="post-meta">Posted by
+        <a href="#">{{postedby}}</a>
+        on {{date createdat}}</p>
+</div>
+{{/each}}
+<hr>
+
+<!-- Pager -->
+{{#if data.next}}
+<div class="clearfix">
+    <a class="btn btn-primary float-right" href="{{next.url}}">Older Posts &rarr;</a>
+</div>
