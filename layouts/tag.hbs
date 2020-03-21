@@ -1,0 +1,17 @@
+<h1>Tag: {{data.name}}</h1>
+
+{{#each data.postreferences}}
+<div class="post-preview">
+    <a href="{{url}}">
+        <h2 class="post-title">
+            {{title}}
+        </h2>
+        <h3 class="post-subtitle">
+            {{excerpt}}
+        </h3>
+    </a>
+    <p class="post-meta">Posted by
+        <a href="#">{{postedby}}</a>
+        on {{date createdat}}</p>
+</div>
+{{/each}}
