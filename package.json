@@ -32,6 +32,7 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
         "bootstrap": "4.3.1",
+        "highlight.js": "^9.18.1",
         "jquery": "3.4.1"
     },
     "devDependencies": {
