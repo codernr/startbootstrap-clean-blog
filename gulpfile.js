@@ -52,6 +52,11 @@ function modules() {
   // Bootstrap
   var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
     .pipe(gulp.dest('./assets/vendor/bootstrap'));
+  // highlight.js
+  var highlightLib = gulp.src('./node_modules/highlight.js/lib/**/*')
+    .pipe(gulp.dest('./assets/vendor/highlight.js'));
+  var highlightCss = gulp.src('./node_modules/highlight.js/styles/*')
+  .pipe(gulp.dest('./assets/vendor/highlight.js/styles'));
   // Font Awesome CSS
   var fontAwesomeCSS = gulp.src('./node_modules/@fortawesome/fontawesome-free/css/**/*')
     .pipe(gulp.dest('./assets/vendor/fontawesome-free/css'));
