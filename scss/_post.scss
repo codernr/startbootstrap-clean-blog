@@ -32,6 +32,17 @@
       }
     }
   }
+  > .tags {
+    a {
+        display: inline-block;
+        font-size: 0.8rem;
+        border: 1px solid $primary;
+        //border-radius: $border-radius;
+        padding: 0.1rem 0.4rem;
+        margin-bottom: 0.2rem;
+        text-transform: uppercase;
+    }
+  }
   @media only screen and (min-width: 768px) {
     > a {
       > .post-title {

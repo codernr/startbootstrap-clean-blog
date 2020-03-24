@@ -4,6 +4,13 @@
         <h2 class="post-title">
             {{title}}
         </h2>
+    </a>
+    <span class="tags">
+        {{#each tagreferences}}
+        <a href="/{{url}}">{{name}}</a>
+        {{/each}}
+    </span>
+    <a href="/{{url}}">
         <h3 class="post-subtitle">
             {{excerpt}}
         </h3>

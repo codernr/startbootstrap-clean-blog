@@ -304,6 +304,15 @@ header.masthead .post-heading .meta a {
   color: #0085A1;
 }
 
+.post-preview > .tags a {
+  display: inline-block;
+  font-size: 0.8rem;
+  border: 1px solid #0085A1;
+  padding: 0.1rem 0.4rem;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;
