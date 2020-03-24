@@ -287,24 +287,30 @@ header.masthead .post-heading .meta a {
   margin: 0 0 10px;
 }
 
-.post-preview > .post-meta {
+@media only screen and (min-width: 768px) {
+  .post-preview > a > .post-title {
+    font-size: 36px;
+  }
+}
+
+.post-meta {
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
   color: #868e96;
 }
 
-.post-preview > .post-meta > a {
+.post-meta > a {
   text-decoration: none;
   color: #212529;
 }
 
-.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
+.post-meta > a:focus, .post-meta > a:hover {
   text-decoration: underline;
   color: #0085A1;
 }
 
-.post-preview > .tags a {
+.tags a {
   display: inline-block;
   font-size: 0.8rem;
   border: 1px solid #0085A1;
@@ -312,12 +318,6 @@ header.masthead .post-heading .meta a {
   padding: 0.1rem 0.4rem;
   margin-bottom: 0.2rem;
   text-transform: uppercase;
-}
-
-@media only screen and (min-width: 768px) {
-  .post-preview > a > .post-title {
-    font-size: 36px;
-  }
 }
 
 .floating-label-form-group {
