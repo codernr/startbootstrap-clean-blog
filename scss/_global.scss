@@ -1,7 +1,8 @@
 // Global styling for this template
 body {
   font-size: 20px;
-  color: $gray-900;
+  color: $gray-100;
+  background-color: $gray-900;
   @include serif-font;
 }
 
@@ -25,7 +26,7 @@ h6 {
 }
 
 a {
-  color: $gray-900;
+  color: $gray-100;
   @include transition-all;
   &:focus,
   &:hover {
@@ -35,7 +36,7 @@ a {
 
 blockquote {
   font-style: italic;
-  color: $gray-600;
+  color: $gray-400;
 }
 
 .section-heading {
