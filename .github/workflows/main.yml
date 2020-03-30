@@ -17,4 +17,4 @@ jobs:
         -H "Authorization: token ${GITHUB_TOKEN}" \
         --request POST \
         --data '{"event_type": "trigger-ci"}' \
-        https://api.github.com/repos/codernr/bloggen-source/dispatches
+        https://api.github.com/repos/codernr/blog-source/dispatches
