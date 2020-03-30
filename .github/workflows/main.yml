@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  webhook:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Dispatch update event
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ secrets.BlogSourceToken }}
+      run: |
+        curl -H "Accept: application/vnd.github.everest-preview+json" \
+        -H "Authorization: token ${GITHUB_TOKEN}" \
+        --request POST \
+        --data '{"event_type": "trigger-ci"}' \
+        https://api.github.com/repos/codernr/bloggen-source/dispatches
