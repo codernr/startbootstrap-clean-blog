@@ -30,6 +30,7 @@
     {{#each site.config.metaproperties}}
     <meta property="{{property}}" content="{{content}}" />
     {{/each}}
+    <meta property="og:description" content="{{#if data.excerpt}}{{data.excerpt}}{{else}}{{site.config.subheading}}{{/if}}" />
 
 </head>
 
