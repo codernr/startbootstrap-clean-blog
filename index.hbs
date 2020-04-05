@@ -37,9 +37,15 @@
     <script src="/assets/vendor/highlight.js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
+    {{#if data.metaproperties}}
+    {{#each data.metaproperties}}
+    <meta property="{{property}}" content="{{content}}" />
+    {{/each}}
+    {{else}}
     {{#each site.config.metaproperties}}
     <meta property="{{property}}" content="{{content}}" />
     {{/each}}
+    {{/if}}
     <meta property="og:description" content="{{#if data.excerpt}}{{data.excerpt}}{{else}}{{site.config.subheading}}{{/if}}" />
 
 </head>
